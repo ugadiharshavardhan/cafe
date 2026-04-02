@@ -1,0 +1,21 @@
+{
+  "name": "Ca Phe Bistro",
+  "short_name": "Ca Phe",
+  "description": "Premium Cinematic Cafe Experience in Hyderabad",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E0E0E",
+  "theme_color": "#C69C6D",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&q=80&w=192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&q=80&w=512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

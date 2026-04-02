@@ -1,52 +1,31 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
+import React from 'react';
 import { Star, MessageSquare } from 'lucide-react';
 
 const fullReviews = [
-  { id: 1, name: 'Alice M.', rating: 5, text: 'A truly premium experience. The attention to detail in every cup is unmatched.', title: 'Premium Artistry', size: 'lg' },
-  { id: 2, name: 'Robert S.', rating: 5, text: 'Best cold brew in the city. The nitrogen infusion is creamy and smooth.', title: 'Nitro Magic', size: 'md' },
-  { id: 3, name: 'Priya V.', rating: 4, text: 'Beautiful aesthetic and even better coffee. The lavender latte is a must-try.', title: 'Floral Delight', size: 'sm' },
-  { id: 4, name: 'Karan J.', rating: 5, text: 'The atmosphere is just right for productivity or relaxation. Truly an urban sanctuary.', title: 'Urban Sanctuary', size: 'lg' },
-  { id: 5, name: 'Emma W.', rating: 5, text: 'High-end coffee, cinematic vibes. I felt like I was in a movie.', title: 'Cinematic Vibes', size: 'md' },
-  { id: 6, name: 'Lokesh T.', rating: 5, text: 'Hyderabad needed a place like this. Exceptional service and artisanal beans.', title: 'Exceptional Service', size: 'sm' },
-  { id: 7, name: 'Sarah G.', rating: 4, text: 'Innovative menu items that you wont find anywhere else. The Espresso Romano is divine.', title: 'Innovative Menu', size: 'md' },
-  { id: 8, name: 'James B.', rating: 5, text: 'The 3D interactions on the site reflect the high-end feel of the bistro. 10/10.', title: 'Tech Meets Taste', size: 'lg' },
+  { id: 1, name: 'Srikanth Banja', rating: 5, text: 'Absolutely one of the best matcha Vietnamese coffee experiences I’ve had at Ca Phe Bistro. The ambiance is cozy and welcoming, perfect for relaxing with a great cup of coffee. The staff and service were very approachable and friendly.', location: 'Hyderabad' },
+  { id: 2, name: 'Dukuntla sai kumar', rating: 5, text: 'Cool & calm breezey Atmosphere...best place to hangout new place alert ##kudos to their brews must try strawberry matcha latte', location: 'Hyderabad' },
+  { id: 3, name: 'Qazi Burhan', rating: 5, text: "Recently visited this cozy cafe and I'm already in love with thier Coconut Vietnamese Coffee ❤️🤎☕", location: 'Hyderabad' },
+  { id: 4, name: 'Sridevi Reddy', rating: 5, text: 'I recently visited Ca Phe Bistro and even though my visit was short, it left a lasting impression. I tried the Vietnamese Coconut Coffee and a Cold Coffee — and both were absolutely delightful.', location: 'Hyderabad' },
+  { id: 5, name: 'Vipul Bhardwaj', rating: 5, text: 'Good place for a quick catch up. Order type: Dine in.', location: 'Hyderabad' },
+  { id: 6, name: 'Anjest Biswa', rating: 5, text: 'Awesome Ambiance Mouth watering beverages and food🍲 Excellent 5 star service by service staff.', location: 'Hyderabad' },
+  { id: 7, name: 'Puduri Pranay', rating: 5, text: 'Very cool place to have a hot coffee and hangout.', location: 'Hyderabad' },
+  { id: 8, name: 'harsha puppala', rating: 5, text: 'Nice place with good ambience, service and food. Must visit!', location: 'Hyderabad' },
+  { id: 9, name: 'Tejitha Gummadi', rating: 5, text: 'One of the most comforting places in Financial district. Best for Vietnamese coffee.', location: 'Hyderabad' },
+  { id: 10, name: 'P Ishika_shilpa', rating: 5, text: 'Superb place for relax and peace. Coffees are amazing.', location: 'Hyderabad' },
+  { id: 11, name: 'Samarth Mahapatro', rating: 5, text: 'Food is REALLY UNDERATED. I love the interesting and unique coffees. I really think this is a new hit!', location: 'Hyderabad' },
+  { id: 12, name: 'Likhith Yenigalla', rating: 5, text: 'Food and ambience is great …. Vietnamese coffee is awesome.', location: 'Hyderabad' },
+  { id: 13, name: 'Jogi Veeranath', rating: 5, text: 'Here have good coffee 🤟 … Food: 5 Service: Excellent.', location: 'Hyderabad' },
+  { id: 14, name: 'Aditya Yadav', rating: 5, text: 'I really love this place and ambience.', location: 'Hyderabad' },
+  { id: 15, name: 'Sandeep Chhetri', rating: 5, text: 'Good ambience with best coffee.', location: 'Hyderabad' },
+  { id: 16, name: 'Ishaan Singh Manhas', rating: 5, text: 'Very good egg coffee. Order type: Dine in.', location: 'Hyderabad' },
+  { id: 17, name: 'Ananda Jena', rating: 5, text: 'Best in class and have a nice ambience.', location: 'Hyderabad' },
+  { id: 18, name: 'Mahima patidar', rating: 5, text: 'Great place and Ambience.', location: 'Hyderabad' },
+  { id: 19, name: 'Kumar Vejendla', rating: 5, text: 'A true Vietnamese coffee experience !!!', location: 'Hyderabad' }
 ];
 
 export default function ReviewsPage() {
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    const bubbles = document.querySelectorAll('.review-bubble');
-    
-    bubbles.forEach((bubble, i) => {
-      // Floating animation
-      gsap.to(bubble, {
-        y: `random(-20, 20)`,
-        x: `random(-10, 10)`,
-        duration: `random(2, 4)`,
-        repeat: -1,
-        yoyo: true,
-        ease: 'power1.inOut',
-        delay: i * 0.2,
-      });
-
-      // Entry animation
-      gsap.fromTo(bubble, 
-        { scale: 0, opacity: 0 },
-        { 
-          scale: 1, 
-          opacity: 1, 
-          duration: 1, 
-          delay: i * 0.1, 
-          ease: 'back.out(1.7)' 
-        }
-      );
-    });
-  }, []);
-
   return (
     <div className="pt-32 pb-24 px-8 md:px-24">
       <header className="mb-24 text-center max-w-2xl mx-auto space-y-6">
@@ -63,14 +42,13 @@ export default function ReviewsPage() {
       </header>
 
       <div 
-        ref={containerRef}
         className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 items-start"
       >
         {fullReviews.map((review) => {
           return (
             <div 
               key={review.id}
-              className="review-bubble glass-light p-8 rounded-[40px] flex flex-col space-y-6 md:hover:scale-105 transition-transform duration-500 cursor-default border-latte/5"
+              className="review-bubble glass-light p-8 rounded-[40px] flex flex-col space-y-6 cursor-default border-latte/5"
             >
               <div className="flex justify-between items-start">
                 <div className="flex gap-1">
@@ -82,10 +60,7 @@ export default function ReviewsPage() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="font-serif text-latte text-2xl">
-                  {review.title}
-                </h3>
-                <p className="text-latte/60 italic leading-relaxed">
+                <p className="text-latte italic leading-relaxed text-lg">
                   "{review.text}"
                 </p>
               </div>
@@ -96,7 +71,7 @@ export default function ReviewsPage() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-latte font-medium tracking-wide">{review.name}</span>
-                  <span className="text-[10px] text-caramel/40 tracking-[0.2em] uppercase"> Hyderabad </span>
+                  <span className="text-[10px] text-caramel/40 tracking-[0.2em] uppercase"> {review.location} </span>
                 </div>
               </div>
             </div>
@@ -111,7 +86,7 @@ export default function ReviewsPage() {
           <p className="text-xs tracking-[0.3em] text-caramel/60 uppercase">Average Rating</p>
         </div>
         <div className="space-y-2">
-          <span className="text-5xl md:text-7xl font-serif text-gold">2.5k+</span>
+          <span className="text-5xl md:text-7xl font-serif text-gold">250+</span>
           <p className="text-xs tracking-[0.3em] text-caramel/60 uppercase">Google Reviews</p>
         </div>
         <div className="space-y-2">
@@ -122,3 +97,4 @@ export default function ReviewsPage() {
     </div>
   );
 }
+

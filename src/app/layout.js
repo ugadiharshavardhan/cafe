@@ -21,6 +21,7 @@ const cormorant = Cormorant_Garamond({
 export const metadata = {
   title: "Ca Phe Bistro | Premium Cinematic Cafe Experience",
   description: "Experience the art of coffee in Hyderabad with Ca Phe Bistro. Premium brewing, luxury ambience, and cinematic interactions.",
+  manifest: "/manifest.json", // Add manifest for PWA support
 };
 
 export default function RootLayout({ children }) {

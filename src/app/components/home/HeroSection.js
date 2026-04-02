@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,16 +13,18 @@ export default function HeroSection() {
 
   useEffect(() => {
     // Subtle parallax and fade on scroll
-    gsap.to(sectionRef.current, {
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-      },
-      y: 100,
-      opacity: 0.5,
-    });
+    if (sectionRef.current) {
+      gsap.to(sectionRef.current, {
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+        y: 100,
+        opacity: 0.5,
+      });
+    }
   }, []);
 
   return (
@@ -55,12 +58,16 @@ export default function HeroSection() {
           Something brewtiful is here ☕. Experience the cinematic art of artisanal brewing in every single drop.
         </p>
         <div className="mt-12 flex flex-col md:flex-row gap-6 justify-center items-center">
-          <button className="w-full md:w-auto px-10 py-4 bg-caramel text-matte-black rounded-full font-bold hover:bg-gold transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_rgba(196,164,132,0.4)]">
-            Explore Menu
-          </button>
-          <button className="w-full md:w-auto px-10 py-4 border border-latte/30 text-latte rounded-full font-bold hover:bg-latte/10 transition-all duration-500 hover:scale-105">
-            Our Story
-          </button>
+          <Link href="/menu" className="w-full md:w-auto">
+            <button className="w-full px-10 py-4 bg-caramel text-matte-black rounded-full font-bold hover:bg-gold transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_rgba(196,164,132,0.4)]">
+              Explore Menu
+            </button>
+          </Link>
+          <Link href="/about" className="w-full md:w-auto">
+            <button className="w-full px-10 py-4 border border-latte/30 text-latte rounded-full font-bold hover:bg-latte/10 transition-all duration-500 hover:scale-105">
+              Our Story
+            </button>
+          </Link>
         </div>
       </div>
 

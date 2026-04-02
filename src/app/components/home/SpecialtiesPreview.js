@@ -1,11 +1,8 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const specialties = [
   {
@@ -34,43 +31,9 @@ const specialties = [
 export default function SpecialtiesPreview() {
   const cardsRef = useRef([]);
 
-  useEffect(() => {
-    // Title reveal animation
-    gsap.fromTo(
-      ".specialties-title",
-      { opacity: 0, scale: 0.95 },
-      {
-        scrollTrigger: {
-          trigger: ".specialties-title",
-          start: "top 90%",
-        },
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        ease: "power2.out",
-      }
-    );
-
-    // Staggered cards reveal
-    gsap.fromTo(
-      ".specialty-card",
-      { opacity: 0, y: 50 },
-      {
-        scrollTrigger: {
-          trigger: ".specialties-grid",
-          start: "top 80%",
-        },
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        stagger: 0.2,
-        ease: "power3.out",
-      }
-    );
-  }, []);
-
   const handleMouseMove = (e, index) => {
     const card = cardsRef.current[index];
+    if (!card) return;
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
@@ -88,22 +51,24 @@ export default function SpecialtiesPreview() {
   };
 
   const handleMouseLeave = (index) => {
-    gsap.to(cardsRef.current[index], {
-      rotateX: 0,
-      rotateY: 0,
-      duration: 0.5,
-      ease: "power3.out",
-    });
+    if (cardsRef.current[index]) {
+      gsap.to(cardsRef.current[index], {
+        rotateX: 0,
+        rotateY: 0,
+        duration: 0.5,
+        ease: "power3.out",
+      });
+    }
   };
 
   return (
     <section className="py-24 px-8 md:px-24 bg-matte-black overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="specialties-title text-4xl md:text-6xl font-serif text-latte">
+          <h2 className="text-4xl md:text-6xl font-serif text-latte">
             Signature Specialties
           </h2>
-          <p className="specialties-title text-caramel/70 max-w-2xl mx-auto">
+          <p className="text-caramel/70 max-w-2xl mx-auto">
             Crafted with precision, inspired by art. Each cup tells a story of heritage and innovation.
           </p>
         </div>

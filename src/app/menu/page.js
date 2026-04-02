@@ -14,9 +14,9 @@ const menuData = [
       { name: 'Cafe Mocha', price: '250', img: 'https://images.unsplash.com/photo-1607681034540-2c46cc71896d?auto=format&fit=crop&w=800&q=60' },
       { name: 'Espresso', price: '170', img: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=60' },
       { name: 'Biscoff Coffee', price: '260', img: 'https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Rose Cappuccino', price: '250', img: 'https://images.unsplash.com/photo-1572286258217-027f3115438c?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Rose Cappuccino', price: '250', img: 'https://images.unsplash.com/photo-1572286258217-027f3115438c?auto=format&fit=crop&w=800&q=60' },
       { name: 'Hazelnut Cappuccino', price: '230', img: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Caramel Cappuccino', price: '230', img: 'https://images.unsplash.com/photo-1544145945-f904253d0c73?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Caramel Cappuccino', price: '230', img: 'https://images.unsplash.com/photo-1544145945-f904253d0c73?auto=format&fit=crop&w=800&q=60' },
       { name: 'Irish Cappuccino', price: '240', img: 'https://images.unsplash.com/photo-1610889556528-9a770e32642f?auto=format&fit=crop&w=800&q=60' },
       { name: 'Vanilla Cappuccino', price: '230', img: 'https://images.unsplash.com/photo-1459755486867-b55449bb39ff?auto=format&fit=crop&w=800&q=60' },
     ]
@@ -26,17 +26,17 @@ const menuData = [
     image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1200&q=80',
     items: [
       { name: 'Nitro Cold Brew', price: '320', img: '/menu/nitro-cold-brew.png' },
-      { name: 'Cold Coffee Blend', price: '300', img: 'https://images.unsplash.com/photo-1503481766315-77d8a4375ad0?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Vanilla Iced Latte', price: '280', img: 'https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Cold Coffee Blend', price: '300', img: 'https://images.unsplash.com/photo-1503481766315-77d8a4375ad0?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Vanilla Iced Latte', price: '280', img: 'https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=800&q=60' },
       { name: 'Irish Latte', price: '290', img: 'https://images.unsplash.com/photo-1518057111178-44a106bad636?auto=format&fit=crop&w=800&q=60' },
       { name: 'Hazelnut Iced Latte', price: '290', img: 'https://images.unsplash.com/photo-1497515114629-f71d768fd07c?auto=format&fit=crop&w=800&q=60' },
       { name: 'Vanilla Iced Latte (Premium)', price: '270', img: 'https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=60' },
       { name: 'OG Filter Coffee', price: '290', img: 'https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=800&q=60' },
       { name: 'Honey Cinnamon Latte', price: '270', img: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=60' },
       { name: 'Spanish Latte', price: '260', img: '/menu/spanish-latte.png' },
-      { name: 'Affogato', price: '260', img: 'https://images.unsplash.com/photo-1507512736643-3d3cc5a23f40?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Affogato', price: '260', img: 'https://images.unsplash.com/photo-1507512736643-3d3cc5a23f40?auto=format&fit=crop&w=800&q=60' },
       { name: 'Iced Latte', price: '230', img: 'https://images.unsplash.com/photo-1549611016-3a70d82b5040?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Caramel Ocean Espresso', price: '320', img: 'https://images.unsplash.com/photo-1512568400610-64da2dca88c5?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Caramel Ocean Espresso', price: '320', img: 'https://images.unsplash.com/photo-1512568400610-64da2dca88c5?auto=format&fit=crop&w=800&q=60' },
       { name: 'Cranberry Espresso', price: '270', img: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=60' },
       { name: 'Orange Espresso', price: '270', img: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=60' },
     ]
@@ -51,8 +51,8 @@ const menuData = [
       { name: 'Cola Cold Brew', price: '230', img: 'https://images.unsplash.com/photo-1505253149613-112d21d9f6a9?auto=format&fit=crop&w=800&q=60' },
       { name: 'Lemon & Honey', price: '270', img: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=60' },
       { name: 'Apple Whiskey', price: '290', img: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Mazagran', price: '270', img: 'https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Orange Whiskey', price: '290', img: 'https://images.unsplash.com/photo-1582239665538-ef42eaaaf700?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Mazagran', price: '270', img: 'https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Orange Whiskey', price: '290', img: 'https://images.unsplash.com/photo-1582239665538-ef42eaaaf700?auto=format&fit=crop&w=800&q=60' },
       { name: 'Simple Cold Brew', price: '199', img: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=60' },
     ]
   },
@@ -61,12 +61,12 @@ const menuData = [
     image: 'https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=1200&q=80',
     items: [
       { name: 'Matcha Hot Coffee', price: '250', img: '/menu/matcha-latte.png' },
-      { name: 'Vietnamese Matcha Latte', price: '320', img: 'https://images.unsplash.com/photo-1536441544485-8f6df71110b6?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Vietnamese Matcha Latte', price: '320', img: 'https://images.unsplash.com/photo-1536441544485-8f6df71110b6?auto=format&fit=crop&w=800&q=60' },
       { name: 'Vanilla Matcha Latte', price: '290', img: 'https://images.unsplash.com/photo-1576092762791-dd9e2220abd1?auto=format&fit=crop&w=800&q=60' },
       { name: 'Avocado Matcha', price: '330', img: 'https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Coconut Matcha', price: '280', img: 'https://images.unsplash.com/photo-1507133750040-4a8f5707833f?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Strawberry Matcha Latte', price: '280', img: 'https://images.unsplash.com/photo-1464191056476-a15e0031980a?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Mango Matcha Latte', price: '280', img: 'https://images.unsplash.com/photo-1525423235917-20bb669ec347?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Coconut Matcha', price: '280', img: 'https://images.unsplash.com/photo-1507133750040-4a8f5707833f?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Strawberry Matcha Latte', price: '280', img: 'https://images.unsplash.com/photo-1464191056476-a15e0031980a?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Mango Matcha Latte', price: '280', img: 'https://images.unsplash.com/photo-1525423235917-20bb669ec347?auto=format&fit=crop&w=800&q=60' },
     ]
   },
   {
@@ -78,12 +78,12 @@ const menuData = [
       { name: 'English Breakfast', price: '250', img: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=60' },
       { name: 'Kimchi Korean Maggi', price: '220', img: 'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=800&q=60' },
       { name: 'Korean Spicy Maggi', price: '220', img: 'https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Standard Maggi', price: '190', img: 'https://images.unsplash.com/photo-1516100882582-76c9a444dd5d?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Standard Maggi', price: '190', img: 'https://images.unsplash.com/photo-1516100882582-76c9a444dd5d?auto=format&fit=crop&w=800&q=60' },
       { name: 'Egg Maggi', price: '210', img: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Bread Omelette', price: '160', img: 'https://images.unsplash.com/photo-1544787210-2211d247156a?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Bread Omelette', price: '160', img: 'https://images.unsplash.com/photo-1544787210-2211d247156a?auto=format&fit=crop&w=800&q=60' },
       { name: 'French Toast', price: '200', img: 'https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Bun Maska', price: '200', img: 'https://images.unsplash.com/photo-1502462041144-01-e836881bc3c?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Sweet Crepes', price: '250', img: 'https://images.unsplash.com/photo-1499961032204-616323c18092?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Bun Maska', price: '200', img: 'https://images.unsplash.com/photo-1502462041144-01-e836881bc3c?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Sweet Crepes', price: '250', img: 'https://images.unsplash.com/photo-1499961032204-616323c18092?auto=format&fit=crop&w=800&q=60' },
     ]
   },
   {
@@ -94,11 +94,11 @@ const menuData = [
       { name: 'Veg. Burger', price: '250', img: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=60' },
       { name: 'Ved Tikki Sliders', price: '250', img: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=60' },
       { name: 'Corn Jalapeno Burger', price: '279', img: 'https://images.unsplash.com/photo-1505253149613-112d21d9f6a9?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Butter Chicken Burger', price: '350', img: 'https://images.unsplash.com/photo-1464305795204-6f5bdee7f81a?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Non-veg. Sliders', price: '280', img: 'https://images.unsplash.com/photo-1558961309-db0117dce9a4?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Butter Chicken Burger', price: '350', img: 'https://images.unsplash.com/photo-1464305795204-6f5bdee7f81a?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Non-veg. Sliders', price: '280', img: 'https://images.unsplash.com/photo-1558961309-db0117dce9a4?auto=format&fit=crop&w=800&q=60' },
       { name: 'Fried Chicken Burger', price: '299', img: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=60' },
       { name: 'Chicken Smash Burger', price: '299', img: 'https://images.unsplash.com/photo-1549611016-3a70d82b5040?auto=format&fit=crop&w=800&q=60' },
-      { name: 'BBQ Pulled Chicken', price: '299', img: 'https://images.unsplash.com/photo-1594631252845-29fc458695d3?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'BBQ Pulled Chicken', price: '299', img: 'https://images.unsplash.com/photo-1594631252845-29fc458695d3?auto=format&fit=crop&w=800&q=60' },
     ]
   },
   {
@@ -107,7 +107,7 @@ const menuData = [
     items: [
       { name: 'Garden Fresh', price: '379', img: 'https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=800&q=60' },
       { name: 'Margherita', price: '349', img: '/menu/margherita.png' },
-      { name: 'Paneer Tikka Pizza', price: '399', img: 'https://images.unsplash.com/photo-1528642463366-83218987ec8f?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Paneer Tikka Pizza', price: '399', img: 'https://images.unsplash.com/photo-1528642463366-83218987ec8f?auto=format&fit=crop&w=800&q=60' },
       { name: 'Peri Peri Chicken', price: '399', img: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=60' },
       { name: 'Butter Chicken Pizza', price: '399', img: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=60' },
     ]
@@ -117,7 +117,7 @@ const menuData = [
     image: 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&w=1200&q=80',
     items: [
       { name: 'Red Sauce (Veg/Non-Veg)', price: '350/400', img: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=60' },
-      { name: 'White Sauce (Veg/Non-Veg)', price: '350/400', img: 'https://images.unsplash.com/photo-1558961309-db0117dce9a4?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'White Sauce (Veg/Non-Veg)', price: '350/400', img: 'https://images.unsplash.com/photo-1558961309-db0117dce9a4?auto=format&fit=crop&w=800&q=60' },
       { name: 'Pink Sauce (Veg/Non-Veg)', price: '350/400', img: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=60' },
     ]
   },
@@ -139,7 +139,7 @@ const menuData = [
     image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=1200&q=80',
     items: [
       { name: 'Banana Bread', price: '140', img: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=60' },
-      { name: 'Hot Chocolate Brownie', price: '299', img: 'https://images.unsplash.com/photo-1620360289413-ed4469f3f717?auto=format&fit=crop&w=800&q=60' },
+      // { name: 'Hot Chocolate Brownie', price: '299', img: 'https://images.unsplash.com/photo-1620360289413-ed4469f3f717?auto=format&fit=crop&w=800&q=60' },
       { name: 'Croissant Fruitjam', price: '200', img: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=60' },
       { name: 'Tres Leches', price: '299', img: 'https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?auto=format&fit=crop&w=800&q=60' },
       { name: 'Chocochip Cookie', price: '100', img: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=60' },

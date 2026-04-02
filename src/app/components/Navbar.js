@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import PWAInstallButton from './PWAInstallButton';
 
 function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -35,11 +36,11 @@ export default function Navbar() {
   return (
     <nav 
       className={cn(
-        "fixed bottom-8 left-1/2 -translate-x-1/2 transition-all duration-500 z-50",
-        scrolled ? "opacity-100 translate-y-0" : "opacity-100 translate-y-0" // Always visible for premium feel
+        "fixed bottom-8 left-1/2 -translate-x-1/2 transition-all duration-500 z-50 flex items-center gap-4",
+        scrolled ? "opacity-100 translate-y-0" : "opacity-100 translate-y-0"
       )}
     >
-      <div className="glass px-2 py-2 rounded-full border border-latte/10 flex items-center gap-1">
+      <div className="glass px-2 py-2 rounded-full border border-latte/10 flex items-center gap-1 group">
         {navItems.map((item) => {
           const isActive = pathname === item.href;
           return (
@@ -60,6 +61,9 @@ export default function Navbar() {
             </Link>
           );
         })}
+      </div>
+      <div className="hidden md:block">
+        <PWAInstallButton />
       </div>
     </nav>
   );
