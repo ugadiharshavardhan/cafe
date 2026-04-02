@@ -36,11 +36,11 @@ export default function Navbar() {
   return (
     <nav 
       className={cn(
-        "fixed bottom-8 left-1/2 -translate-x-1/2 transition-all duration-500 z-50 flex items-center gap-4",
+        "fixed bottom-8 left-1/2 -translate-x-1/2 transition-all duration-500 z-50 flex items-center gap-4 w-[95%] sm:w-auto max-w-[calc(100vw-2rem)]",
         scrolled ? "opacity-100 translate-y-0" : "opacity-100 translate-y-0"
       )}
     >
-      <div className="glass px-2 py-2 rounded-full border border-latte/10 flex items-center gap-1 group">
+      <div className="glass px-1.5 py-1.5 sm:px-2 sm:py-2 rounded-full border border-latte/10 flex items-center gap-0.5 sm:gap-1 group overflow-x-auto hide-scrollbar whitespace-nowrap mask-fade-edges">
         {navItems.map((item) => {
           const isActive = pathname === item.href;
           return (
@@ -48,7 +48,7 @@ export default function Navbar() {
               key={item.name}
               href={item.href}
               className={cn(
-                "relative flex items-center justify-center px-4 py-2 text-sm font-medium transition-all duration-300 rounded-full",
+                "relative flex items-center justify-center px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-sm font-medium transition-all duration-300 rounded-full flex-shrink-0",
                 isActive 
                   ? "text-latte" 
                   : "text-latte/60 hover:text-latte hover:scale-105 active:scale-95"
