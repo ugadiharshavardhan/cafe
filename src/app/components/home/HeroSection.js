@@ -4,12 +4,14 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
+import { useBooking } from '../BookingProvider';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroSection() {
   const sectionRef = useRef(null);
   const videoRef = useRef(null);
+  const { openOptions } = useBooking();
 
   useEffect(() => {
     // Subtle parallax and fade on scroll
@@ -63,11 +65,13 @@ export default function HeroSection() {
               Explore Menu
             </button>
           </Link>
-          <Link href="/about" className="w-full md:w-auto">
-            <button className="w-full px-10 py-4 border border-latte/30 text-latte rounded-full font-bold hover:bg-latte/10 transition-all duration-500 hover:scale-105">
-              Our Story
-            </button>
-          </Link>
+          
+          <button 
+            onClick={openOptions}
+            className="w-full md:w-auto px-10 py-4 border border-latte/30 text-latte rounded-full font-bold hover:bg-latte/10 transition-all duration-500 hover:scale-105"
+          >
+            Book Online
+          </button>
         </div>
       </div>
 

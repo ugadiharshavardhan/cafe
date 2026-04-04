@@ -24,6 +24,8 @@ export const metadata = {
   manifest: "/manifest.json", // Add manifest for PWA support
 };
 
+import BookingProvider from "./components/BookingProvider";
+
 export default function RootLayout({ children }) {
   return (
     <html
@@ -35,14 +37,17 @@ export default function RootLayout({ children }) {
         <CustomCursor />
         <AmbientSoundToggle />
         <SmoothScrollProvider>
-          <Navbar />
-          <PageTransition>
-            <main className="relative z-10 w-full overflow-x-hidden">
-              {children}
-            </main>
-          </PageTransition>
+          <BookingProvider>
+            <Navbar />
+            <PageTransition>
+              <main className="relative z-10 w-full overflow-x-hidden">
+                {children}
+              </main>
+            </PageTransition>
+          </BookingProvider>
         </SmoothScrollProvider>
       </body>
     </html>
   );
 }
+
